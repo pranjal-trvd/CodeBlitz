@@ -8,7 +8,6 @@ export const getOutput = (output) => {
       </pre>
     );
   } else if (statusId === 3) {
-    console.log("finished",output.time)
     return (
       <>
       {output && <span className="text-[#5cb85c] font-mono text-sm px-2">Finised in {parseInt(output.time*100)} ms </span> }

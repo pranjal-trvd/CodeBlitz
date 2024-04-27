@@ -32,13 +32,11 @@ const Navbar = ({
 				setOutput(output);
 				setStatus("Finished");
 			} else {
-				console.log(err);
 				setStatus("Error");
 			}
 		}
 		catch (err) {
 			let error = err.response ? err.response.data : err;
-			console.log(error);
 		}
 	};
 

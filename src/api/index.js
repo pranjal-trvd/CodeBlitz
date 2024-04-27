@@ -29,8 +29,6 @@ export const checkStatus = async (token) => {
     } else {
       const { data } = response;
 
-      console.log(data);
-
       return { success: true, data };
     }
   } catch (err) {
@@ -54,7 +52,6 @@ export const submitCode = async (formData) => {
 
   try {
     const { data } = await axios.request(options);
-    console.log(data);
 
     return { success: true, data };
   } catch (err) {
